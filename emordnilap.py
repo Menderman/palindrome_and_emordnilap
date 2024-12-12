@@ -26,6 +26,7 @@ print("Emordnilap words:")
 with open(words, 'r') as file:
     for word in file:
         word=word.strip().lower()
+        word=word.replace(" ","")
         word2=word[::-1]
         #print(word)
         if(isEmordnilap(word,all_words)):

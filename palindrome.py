@@ -19,6 +19,7 @@ print("Palindrome words:")
 with open(file_name, 'r') as file:
     for word in file:
         word=word.strip().lower()
+        word=word.replace(" ", "")
         #print(word)
         if(isPalindrome(word)):
             print(word)
